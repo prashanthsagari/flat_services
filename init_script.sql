@@ -1,4 +1,6 @@
 create database flatbuddy;
+use flatbuddy;
+
 create database reviews_db;
 use reviews_db;
 CREATE TABLE reviews (
