@@ -4,9 +4,9 @@ minikube start --driver=docker
 
 docker info
 docker pull mysql:8.0
-docker pull sagariprashanth/gateway-router:latest
-docker pull sagariprashanth/favorites-service:latest
-docker pull sagariprashanth/reviews-service:latest
+docker pull sagariprashanth/gateway-router:1.0
+docker pull sagariprashanth/favorites-service:1.0
+docker pull sagariprashanth/reviews-service:1.0
 
 
 kubectl apply -f mysql-pv.yaml

@@ -17,9 +17,7 @@ spec:
         image: mysql:8.0
         env:
         - name: MYSQL_ROOT_PASSWORD
-          value: sagari
-        - name: MYSQL_DATABASE
-          value: favorite_db
+          value: 1234
         ports:
         - containerPort: 3306
         volumeMounts:
@@ -28,5 +26,5 @@ spec:
       volumes:
       - name: mysql-storage
         persistentVolumeClaim:
-            claimName: mysql-pvc
+            claimName: mysql
 
