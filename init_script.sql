@@ -1,3 +1,4 @@
+create database flatbuddy;
 create database reviews_db;
 use reviews_db;
 CREATE TABLE reviews (

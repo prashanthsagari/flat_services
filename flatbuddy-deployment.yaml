@@ -14,10 +14,17 @@ spec:
     spec:
       containers:
         - name: flatbuddy
-          image: flatbuddy-service:latest
+          image: flatbuddy-service:1.0
           imagePullPolicy: Never  # Prevent Kubernetes from pulling the image
           ports:
             - containerPort: 8080
+          env:
+            - name: SPRING_DATASOURCE_URL
+              value: jdbc:mysql://mysql:3306/flatbuddy
+            - name: SPRING_DATASOURCE_USERNAME
+              value: root
+            - name: SPRING_DATASOURCE_PASSWORD
+              value: "1234"
 ---
 apiVersion: v1
 kind: Service
@@ -30,4 +37,4 @@ spec:
   ports:
     - port: 8080
       targetPort: 8080
-      nodePort: 30080
+      nodePort: 30180

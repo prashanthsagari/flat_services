@@ -17,7 +17,7 @@ spec:
         image: mysql:8.0
         env:
         - name: MYSQL_ROOT_PASSWORD
-          value: 1234
+          value: "1234"
         ports:
         - containerPort: 3306
         volumeMounts:
@@ -26,5 +26,5 @@ spec:
       volumes:
       - name: mysql-storage
         persistentVolumeClaim:
-            claimName: mysql
+            claimName: mysql-pv-claim
 
