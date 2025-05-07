@@ -23,10 +23,12 @@ kubectl apply -f favorites-service.yaml
 kubectl apply -f gateway-router-deployment.yaml
 kubectl apply -f gateway-router-service.yaml
 
+kubectl get pods
 
+kubectl scale deployment mysql --replicas=1
 
 run scripts  init_script.sql
 
-
+kubectl port-forward svc/mysql 3307:3306 
 
 kubectl port-forward svc/gateway-router 8889:8889
