@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: flatbuddy
-          image: flatbuddy-service:1.0
+          image: sagariprashanth/flatbuddy-service:1.0
           imagePullPolicy: Never  # Prevent Kubernetes from pulling the image
           ports:
             - containerPort: 8080

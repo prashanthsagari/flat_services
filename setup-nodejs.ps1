@@ -81,7 +81,7 @@ spec:
     spec:
       containers:
       - name: flat-listing-service
-        image: flat-listing-service:latest
+        image: flat-listing-service:1.0
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3000

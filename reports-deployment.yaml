@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: reports
-          image: reports-service:1.0
+          image: sagariprashanth/reports-service:1.0
           imagePullPolicy: Never  # Prevent Kubernetes from pulling the image
           ports:
             - containerPort: 8081
