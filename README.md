@@ -37,6 +37,8 @@ kubectl apply -f reviews-service.yaml
 kubectl apply -f favorites-deployment.yaml  
 kubectl apply -f favorites-service.yaml  
 
+# kubectl delete -f reports-deployment.yaml 
+
 kubectl apply -f flatbuddy-deployment.yaml 
 
 kubectl apply -f reports-deployment.yaml 
@@ -53,6 +55,14 @@ kubectl get pods
 <!-- kubectl scale deployment mysql --replicas=1 -->
 
 kubectl port-forward svc/gateway-router 8889:8889  
+
+
+# Get service name 
+kubectl get svc
+
+# To delete any deployments and services 
+kubectl delete deployment <service_name>
+kubectl delete service <service_name>
 
 # if any issues 
 kubectl describe pod <pod_name>
