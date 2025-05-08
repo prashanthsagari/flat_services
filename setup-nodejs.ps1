@@ -81,7 +81,7 @@ spec:
     spec:
       containers:
       - name: flat-listing-service
-        image: flat-listing-service:1.0
+        image: sagariprashanth/flat-listing-service:1.0
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3000
@@ -116,7 +116,7 @@ Write-Host "Docker environment configured for Minikube."
 
 # Step 4: Build Docker image for Node.js app
 Write-Host "Building Docker image 'flat-listing-service:latest'..."
-docker build -t flat-listing-service:latest .
+# docker build -t flat-listing-service:latest .
 if ($LASTEXITCODE -ne 0) {
     Write-Error "Docker build failed with exit code $LASTEXITCODE."
     exit 1
