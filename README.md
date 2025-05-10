@@ -82,36 +82,36 @@ minikube delete --all
   Associated data like volumes and persistent data  
   Network settings created by Minikube  
 
-# to build and push images 
-docker build -t gateway-router:1.0 .
-docker build -t flat-listing-service:1.0 .
-docker build -t reviews-service:1.0 .
-docker build -t reports-service:1.0 .
-docker build -t favorites-service:1.0 .
-docker build -t flatbuddy-service:1.0 .
+# to build and push images   
+docker build -t gateway-router:1.0 .  
+docker build -t flat-listing-service:1.0 .  
+docker build -t reviews-service:1.0 .  
+docker build -t reports-service:1.0 .  
+docker build -t favorites-service:1.0 .  
+docker build -t flatbuddy-service:1.0 .  
 
-docker tag favorites-service:1.0 sagariprashanth/favorites-service:1.0
-docker push sagariprashanth/favorites-service:1.0
+docker tag favorites-service:1.0 sagariprashanth/favorites-service:1.0  
+docker push sagariprashanth/favorites-service:1.0  
 
-docker tag flatbuddy-service:1.0 sagariprashanth/flatbuddy-service:1.0
-docker push sagariprashanth/flatbuddy-service:1.0
+docker tag flatbuddy-service:1.0 sagariprashanth/flatbuddy-service:1.0  
+docker push sagariprashanth/flatbuddy-service:1.0   
 
-docker tag reports-service:1.0 sagariprashanth/reports-service:1.0
-docker push sagariprashanth/reports-service:1.0
+docker tag reports-service:1.0 sagariprashanth/reports-service:1.0  
+docker push sagariprashanth/reports-service:1.0  
 
-docker tag flat-listing-service:1.0 sagariprashanth/flat-listing-service:1.0
-docker push sagariprashanth/flat-listing-service:1.0
+docker tag flat-listing-service:1.0 sagariprashanth/flat-listing-service:1.0  
+docker push sagariprashanth/flat-listing-service:1.0  
 
-docker tag gateway-router:1.0 sagariprashanth/gateway-router:1.0
-docker push sagariprashanth/gateway-router:1.0
+docker tag gateway-router:1.0 sagariprashanth/gateway-router:1.0  
+docker push sagariprashanth/gateway-router:1.0  
 
-docker tag reviews-service:1.0 sagariprashanth/reviews-service:1.0
-docker push sagariprashanth/reviews-service:1.0
+docker tag reviews-service:1.0 sagariprashanth/reviews-service:1.0  
+docker push sagariprashanth/reviews-service:1.0  
 
 
-docker tag gateway-router:latest sagariprashanth/gateway-router:latest
-docker push sagariprashanth/gateway-router:latest
-
+docker tag gateway-router:latest sagariprashanth/gateway-router:latest  
+docker push sagariprashanth/gateway-router:latest  
+  
 
 
 -- kubectl delete -f reports-deployment.yaml 
