@@ -71,10 +71,10 @@ kubectl describe pod <pod_name>
 ### DANGER 
 minikube delete --all
 ### Deletes all Minikube clusters on your system, including:
-### All VMs or containers created by Minikube
-### Cluster configuration
-### Associated data like volumes and persistent data
-### Network settings created by Minikube
+  All VMs or containers created by Minikube  
+  Cluster configuration  
+  Associated data like volumes and persistent data  
+  Network settings created by Minikube  
 
 # to build and push images 
 docker build -t gateway-router:1.0 .
