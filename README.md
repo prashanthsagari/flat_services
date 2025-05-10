@@ -37,7 +37,7 @@ kubectl apply -f reviews-service.yaml
 kubectl apply -f favorites-deployment.yaml  
 kubectl apply -f favorites-service.yaml  
 
-# kubectl delete -f reports-deployment.yaml 
+
 
 kubectl apply -f flatbuddy-deployment.yaml 
 
@@ -61,8 +61,8 @@ kubectl port-forward svc/gateway-router 8889:8889
 kubectl get svc
 
 # To delete any deployments and services 
-kubectl delete deployment <service_name>
-kubectl delete service <service_name>
+kubectl delete deployment <service_name>  
+kubectl delete service <service_name>  
 
 # if any issues 
 kubectl describe pod <pod_name>
@@ -70,12 +70,11 @@ kubectl describe pod <pod_name>
 
 ### DANGER 
 minikube delete --all
-
-# Deletes all Minikube clusters on your system, including:
-# All VMs or containers created by Minikube
-# Cluster configuration
-# Associated data like volumes and persistent data
-# Network settings created by Minikube
+### Deletes all Minikube clusters on your system, including:
+### All VMs or containers created by Minikube
+### Cluster configuration
+### Associated data like volumes and persistent data
+### Network settings created by Minikube
 
 # to build and push images 
 docker build -t gateway-router:1.0 .
@@ -106,3 +105,7 @@ docker push sagariprashanth/reviews-service:1.0
 
 docker tag gateway-router:latest sagariprashanth/gateway-router:latest
 docker push sagariprashanth/gateway-router:latest
+
+
+
+-- kubectl delete -f reports-deployment.yaml 
