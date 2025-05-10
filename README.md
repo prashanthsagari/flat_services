@@ -62,6 +62,10 @@ kubectl port-forward svc/gateway-router 8889:8889
 # Get service name 
 kubectl get svc
 
+# Stop minikube
+minikube stop  
+
+
 # To delete any deployments and services 
 kubectl delete deployment <service_name>  
 kubectl delete service <service_name>  
