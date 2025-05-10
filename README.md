@@ -46,9 +46,11 @@ kubectl apply -f reports-deployment.yaml
 kubectl apply -f gateway-router-deployment.yaml  
 kubectl apply -f gateway-router-service.yaml  
 
-# Set-ExecutionPolicy Unrestricted
+### Run below command to allow running  .psl file in poweshell 
+Set-ExecutionPolicy Unrestricted  
+
 # if below command is not working then clone flat-listing-service repo from there run
-setup-nodejs.ps1 
+ .\setup-nodejs.ps1   
 
 kubectl get pods   
 
