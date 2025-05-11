@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: notification-container
-        image: notification-service:latest
+        image: notification-service:1.0
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8081
