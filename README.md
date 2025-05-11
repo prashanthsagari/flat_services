@@ -1,4 +1,4 @@
-"# flat_services" 
+"# flat_services"   
 docker system prune -a --volumes -f
 
 # start minikube inside docker
@@ -18,6 +18,9 @@ docker pull sagariprashanth/reviews-service:1.0
 docker pull sagariprashanth/reports-service:1.0  
 docker pull sagariprashanth/flatbuddy-service:1.0  
 docker pull sagariprashanth/flat-listing-service:1.0
+
+docker pull sagariprashanth/chat-service:1.0   
+docker pull sagariprashanth/notification-service:1.0   
 
 # verify images are pulled or not 
 docker images 
@@ -46,9 +49,9 @@ kubectl apply -f reports-deployment.yaml
 kubectl apply -f gateway-router-deployment.yaml  
 kubectl apply -f gateway-router-service.yaml  
 
-kubectl apply -f chat-deployment.yaml
-kubectl apply -f notification-deployment.yaml
-kubectl apply -f kafka-deployment.yaml
+kubectl apply -f chat-deployment.yaml  
+kubectl apply -f notification-deployment.yaml  
+kubectl apply -f kafka-deployment.yaml  
 
 ### Run below command to allow running  .psl file in poweshell 
 Set-ExecutionPolicy Unrestricted  
