@@ -48,6 +48,10 @@ kubectl apply -f reports-deployment.yaml
 kubectl apply -f gateway-router-deployment.yaml  
 kubectl apply -f gateway-router-service.yaml  
 
+kubectl apply -f chat-deployment.yaml
+kubectl apply -f notification-deployment.yaml
+kubectl apply -f kafka-deployment.yaml
+
 ### Run below command to allow running  .psl file in poweshell 
 Set-ExecutionPolicy Unrestricted  
 
