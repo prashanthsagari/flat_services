@@ -1,4 +1,6 @@
 "# flat_services" 
+docker system prune -a --volumes -f
+
 # start minikube inside docker
 minikube start --driver=docker
 
