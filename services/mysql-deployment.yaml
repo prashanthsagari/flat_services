@@ -53,3 +53,19 @@ spec:
     targetPort: 3306
     nodePort: 30036
   type: NodePort
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: mysql-pv-claim
+spec:
+  capacity:
+    storage: 1Gi  # Adjust size as needed
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: standard
+  hostPath:
+    path: /mnt/data/mysql  # Path on the host machine (Minikube VM)

@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: flat-listing-service
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: flat-listing-service
