@@ -1,4 +1,4 @@
-"# flat_services" 
+"# flat_services"   
 docker system prune -a --volumes -f
 
 # start minikube inside docker
