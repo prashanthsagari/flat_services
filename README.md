@@ -23,11 +23,9 @@ docker pull sagariprashanth/flat-listing-service:1.0
 docker images 
 
 # start services
-kubectl apply -f mysql-pv.yaml  
-kubectl apply -f mysql-pvc.yaml  
 kubectl apply -f mysql-deployment.yaml  
-kubectl apply -f mysql-deployment_v.yaml  
-kubectl apply -f mysql-service.yaml  
+kubectl apply -f mysql-pv.yaml  
+
  
 
 # open init_script.sql file and run inside mysql
@@ -121,3 +119,7 @@ docker push sagariprashanth/gateway-router:latest
 
 
 -- kubectl delete -f reports-deployment.yaml 
+-- kubectl apply -f mysql-pvc.yaml  
+-- kubectl apply -f mysql-deployment_v.yaml  
+-- kubectl apply -f mysql-service.yaml  
+
